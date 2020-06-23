@@ -113,14 +113,18 @@ class PaperImages:
 
 
 if __name__ == "__main__":
-    save_path = '/Users/zhangyesheng/Desktop/Research/GraduationDesign/StereoVision/ManualDataset/Res/KITTI'
-    save_prefix = 'txt'
-    filefolder = '/Users/zhangyesheng/Desktop/Research/GraduationDesign/StereoVision/ManualDataset/Res/KITTI'
-    image_name = '5.jpg'
-    fp = '/Users/zhangyesheng/Documents/GitHub/ImgProcess/font21727/AuxinDemiBold.otf'
-
+    save_path = '/Users/zhangyesheng/Desktop/Research/GraduationDesign/Res/TUM/Res'
+    save_prefix = 'TUM'
+    filefolder = '/Users/zhangyesheng/Desktop/Research/GraduationDesign/Res/TUM/Res'
+    image_name = '3.jpg'
+    fp = '/Users/zhangyesheng/Documents/GitHub/ImagesForPaper/font21727/AuxinDemiBold.otf'
 
     IP = PaperImages(save_path,save_prefix)
     IP.load_imgs_folder(filefolder)
-    IP.imgs_paste(2,3)
-    # IP.draw_txt(image_name, 'GT', [0.8,0.05], (255,255,255), 40, fp)
+
+
+    # Draw Txt    
+    # IP.draw_txt(image_name, 'OANet', [0.65,0.05], (255,255,255), 40, fp)
+
+    # Paste
+    IP.imgs_paste(3,2)
