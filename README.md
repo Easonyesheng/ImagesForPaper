@@ -1,2 +1,2 @@
 # ImagesForPaper
- Perform Image Process for writing thesis
+Get your figures ready for writing thesis.
